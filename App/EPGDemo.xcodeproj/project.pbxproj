@@ -99,13 +99,13 @@
 		CF643A5224766E84009C6B0A /* EPGDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CF643A5324766E84009C6B0A /* AppDelegate.swift */,
-				CF643A5524766E84009C6B0A /* ViewController.swift */,
-				CF643A5724766E84009C6B0A /* Main.storyboard */,
-				CF643A5D24766E88009C6B0A /* Assets.xcassets */,
-				CF643A5F24766E88009C6B0A /* LaunchScreen.storyboard */,
-				CF643A6224766E88009C6B0A /* Info.plist */,
-				CF643A5A24766E84009C6B0A /* EPGDemo.xcdatamodeld */,
+				CF643A8B247671AC009C6B0A /* App */,
+				CF643A85247670C0009C6B0A /* Core */,
+				CF643A86247670CD009C6B0A /* Data */,
+				CF643A87247670DA009C6B0A /* Presentation */,
+				CF643A8824767137009C6B0A /* UI */,
+				CF643A892476714A009C6B0A /* Resources */,
+				CF643A8424766F5F009C6B0A /* SupportingFiles */,
 			);
 			path = EPGDemo;
 			sourceTree = "<group>";
@@ -126,6 +126,62 @@
 				CF643A7824766E88009C6B0A /* Info.plist */,
 			);
 			path = EPGDemoUITests;
+			sourceTree = "<group>";
+		};
+		CF643A8424766F5F009C6B0A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CF643A6224766E88009C6B0A /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CF643A85247670C0009C6B0A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CF643A86247670CD009C6B0A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CF643A87247670DA009C6B0A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CF643A8824767137009C6B0A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CF643A5524766E84009C6B0A /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CF643A892476714A009C6B0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF643A5D24766E88009C6B0A /* Assets.xcassets */,
+				CF643A5A24766E84009C6B0A /* EPGDemo.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF643A8B247671AC009C6B0A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CF643A5324766E84009C6B0A /* AppDelegate.swift */,
+				CF643A5F24766E88009C6B0A /* LaunchScreen.storyboard */,
+				CF643A5724766E84009C6B0A /* Main.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33482W4AH2;
-				INFOPLIST_FILE = EPGDemo/Info.plist;
+				INFOPLIST_FILE = EPGDemo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33482W4AH2;
-				INFOPLIST_FILE = EPGDemo/Info.plist;
+				INFOPLIST_FILE = EPGDemo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
