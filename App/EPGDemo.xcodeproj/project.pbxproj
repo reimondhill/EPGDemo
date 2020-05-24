@@ -18,6 +18,7 @@
 		CF59C194247AAF4E00D0768C /* ServerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C193247AAF4E00D0768C /* ServerInfo.swift */; };
 		CF59C196247AB55E00D0768C /* EPGResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C195247AB55E00D0768C /* EPGResponse.swift */; };
 		CF59C199247AC17800D0768C /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C198247AC17800D0768C /* URL.swift */; };
+		CF59C1A1247AD36600D0768C /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C1A0247AD36600D0768C /* URLTests.swift */; };
 		CF643A5424766E84009C6B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A5324766E84009C6B0A /* AppDelegate.swift */; };
 		CF643A5624766E84009C6B0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A5524766E84009C6B0A /* ViewController.swift */; };
 		CF643A5924766E84009C6B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF643A5724766E84009C6B0A /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		CF59C193247AAF4E00D0768C /* ServerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerInfo.swift; sourceTree = "<group>"; };
 		CF59C195247AB55E00D0768C /* EPGResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGResponse.swift; sourceTree = "<group>"; };
 		CF59C198247AC17800D0768C /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		CF59C1A0247AD36600D0768C /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		CF643A5024766E84009C6B0A /* EPGDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPGDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF643A5324766E84009C6B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF643A5524766E84009C6B0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CF59C198247AC17800D0768C /* URL.swift */,
+				CF59C19F247AD32300D0768C /* Tests */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,6 +144,14 @@
 			children = (
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		CF59C19F247AD32300D0768C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CF59C1A0247AD36600D0768C /* URLTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		CF643A4724766E84009C6B0A = {
@@ -425,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF59C188247AADC000D0768C /* MockNetworkManager.swift in Sources */,
+				CF59C1A1247AD36600D0768C /* URLTests.swift in Sources */,
 				CF643A6C24766E88009C6B0A /* EPGDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

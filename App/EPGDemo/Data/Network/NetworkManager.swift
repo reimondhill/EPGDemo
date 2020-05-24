@@ -19,7 +19,7 @@ class NetworkManager: NSObject, Network {
         switch method {
         case .get:
             urlRequest.httpMethod = "GET"
-            urlRequest.url = urlRequest.url?.appending(queryItems: getURLQueryItems(params: params))
+            urlRequest.url = urlRequest.url?.appending(params: params)
             break
         case .post:
             urlRequest.httpMethod = "POST"
@@ -86,12 +86,7 @@ private extension NetworkManager {
         }.resume()
         
     }
-    
-    func getURLQueryItems(params: [String:String]) -> [URLQueryItem] {
-        return params
-            .compactMap({ URLQueryItem(name: $0.key, value: $0.value) })
-    }
-    
+
     func getPostString(params: [String: Any]) -> String {
         return params
             .compactMap({ "\($0.key)=\($0.value)" })
