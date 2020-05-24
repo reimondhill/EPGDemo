@@ -12,7 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        EPGFetcher().getEPG(daysOffset: 0) { (result) in
+            switch result {
+            case .success(_):
+                print("yeah")
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
 
