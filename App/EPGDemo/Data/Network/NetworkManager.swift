@@ -12,8 +12,6 @@ import Foundation
 class NetworkManager: NSObject, Network {
     
     func fetchCodable<T>(url:URL, method: RequestType, params: [String: String], completion: @escaping (Result<T, Error>) -> Void) where T : Decodable, T : Encodable {
-        
-        print(self, #function, "Fetching at ", url.absoluteString)
         var urlRequest = URLRequest(url: url)
         
         switch method {
@@ -23,22 +21,28 @@ class NetworkManager: NSObject, Network {
             break
         case .post:
             urlRequest.httpMethod = "POST"
-            urlRequest.httpBody = getPostString(params: params).data(using: .utf8)
+            urlRequest.httpBody = params.compactMap({ "\($0.key)=\($0.value)" })
+                .joined(separator: "&")
+                .data(using: .utf8)
         }
         
+        Logger.d(message: "Fetching at \(urlRequest.url?.absoluteString ?? "")")
         performRequest(urlRequest) { (result) in
             
             switch result{
             case .success(let data):
                 do {
                     let response = try JSONDecoder().decode(T.self, from: data)
+                    Logger.d(message: "\(urlRequest.url?.absoluteString ?? "") => Succcess")
                     completion(.success(response))
                 }
                 catch let decodeError{
+                    Logger.e(message: "\(url.absoluteString) => ERROR: \(decodeError)")
                     completion(.failure(decodeError))
                 }
                 
             case .failure(let error):
+                Logger.e(message: "\(url.absoluteString) => ERROR: \(error)")
                 completion(.failure(error))
                 
             }
@@ -87,10 +91,4 @@ private extension NetworkManager {
         
     }
 
-    func getPostString(params: [String: Any]) -> String {
-        return params
-            .compactMap({ "\($0.key)=\($0.value)" })
-            .joined(separator: "&")
-    }
-    
 }

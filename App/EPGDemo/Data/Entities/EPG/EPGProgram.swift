@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct EPGProgram: Codable {
+struct EPGProgram {
     /// Unique identifier of the program
     let id: String
     /// Name of the program
@@ -18,13 +18,35 @@ struct EPGProgram: Codable {
     let startDateString: String?
     /// End of the program in UTC
     let endDateString: String?
+}
+
+
+//MARK: - Public methods
+extension EPGProgram {
     
+    func startDate(format: Date.Format = .locale) -> Date? {
+        guard let startDateString = startDateString else { return nil }
+        
+        return Date(string: startDateString, using: format)
+    }
+    
+    func enDate(format: Date.Format = .locale) -> Date? {
+        guard let endDateString = endDateString else { return nil }
+        
+        return Date(string: endDateString, using: format)
+    }
+    
+}
+
+
+//MARK: - Codable implementation
+extension EPGProgram: Codable {
     
     enum CodingKeys: String, CodingKey {
         case id
         case title
-        
-        case startDateString
-        case endDateString
+        case startDateString = "start"
+        case endDateString = "end"
     }
+    
 }

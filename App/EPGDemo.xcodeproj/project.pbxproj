@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CF023AA924769123000FA45D /* EPGTVPlayerResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = CF023AA824769123000FA45D /* EPGTVPlayerResponse.json */; };
+		CF036B08247BE35B00850F56 /* EPGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF036B07247BE35B00850F56 /* EPGCollectionViewCell.swift */; };
+		CF036B0A247BE38900850F56 /* EPGCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF036B09247BE38900850F56 /* EPGCollectionViewModel.swift */; };
 		CF59C186247AAD9900D0768C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C183247AAD9800D0768C /* NetworkManager.swift */; };
 		CF59C187247AAD9900D0768C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C184247AAD9900D0768C /* Network.swift */; };
 		CF59C188247AADC000D0768C /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C182247AAD9800D0768C /* MockNetworkManager.swift */; };
@@ -20,13 +22,25 @@
 		CF59C199247AC17800D0768C /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C198247AC17800D0768C /* URL.swift */; };
 		CF59C1A1247AD36600D0768C /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59C1A0247AD36600D0768C /* URLTests.swift */; };
 		CF643A5424766E84009C6B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A5324766E84009C6B0A /* AppDelegate.swift */; };
-		CF643A5624766E84009C6B0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A5524766E84009C6B0A /* ViewController.swift */; };
-		CF643A5924766E84009C6B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF643A5724766E84009C6B0A /* Main.storyboard */; };
+		CF643A5624766E84009C6B0A /* EPGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A5524766E84009C6B0A /* EPGViewController.swift */; };
 		CF643A5C24766E84009C6B0A /* EPGDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF643A5A24766E84009C6B0A /* EPGDemo.xcdatamodeld */; };
 		CF643A5E24766E88009C6B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF643A5D24766E88009C6B0A /* Assets.xcassets */; };
 		CF643A6124766E88009C6B0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF643A5F24766E88009C6B0A /* LaunchScreen.storyboard */; };
 		CF643A6C24766E88009C6B0A /* EPGDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A6B24766E88009C6B0A /* EPGDemoTests.swift */; };
 		CF643A7724766E88009C6B0A /* EPGDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A7624766E88009C6B0A /* EPGDemoUITests.swift */; };
+		CF6CA0E2249A0E6E00A70D59 /* ReusableIdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CA0E1249A0E6E00A70D59 /* ReusableIdentifierTests.swift */; };
+		CFABC7CA2498BA4500F1C54D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABC7C92498BA4500F1C54D /* Logger.swift */; };
+		CFABC7CD2498C24000F1C54D /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABC7CC2498C24000F1C54D /* LoggerTests.swift */; };
+		CFDCE3AA24A255930024B1B3 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDCE3A924A255930024B1B3 /* Collection.swift */; };
+		CFDCE3AC24A255DB0024B1B3 /* CollectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDCE3AB24A255DB0024B1B3 /* CollectionTest.swift */; };
+		CFDD960A247BD063008CC476 /* EPGViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD9609247BD063008CC476 /* EPGViewModel.swift */; };
+		CFDD960C247BD509008CC476 /* EPGCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD960B247BD509008CC476 /* EPGCoordinator.swift */; };
+		CFDD960E247BD5C1008CC476 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD960D247BD5C1008CC476 /* Date.swift */; };
+		CFDD9610247BD6A8008CC476 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD960F247BD6A8008CC476 /* DateTests.swift */; };
+		CFDD9613247BDBEF008CC476 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CFDD9612247BDBEF008CC476 /* SnapKit */; };
+		CFDD9615247BDD0F008CC476 /* EPGFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD9614247BDD0F008CC476 /* EPGFlowLayout.swift */; };
+		CFDD9617247BDD77008CC476 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD9616247BDD77008CC476 /* UICollectionViewCell.swift */; };
+		CFDD961B247BDEE6008CC476 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD961A247BDEE6008CC476 /* ReusableIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		CF023AA824769123000FA45D /* EPGTVPlayerResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EPGTVPlayerResponse.json; sourceTree = "<group>"; };
+		CF036B07247BE35B00850F56 /* EPGCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF036B09247BE38900850F56 /* EPGCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGCollectionViewModel.swift; sourceTree = "<group>"; };
 		CF59C182247AAD9800D0768C /* MockNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		CF59C183247AAD9800D0768C /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CF59C184247AAD9900D0768C /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -61,8 +77,7 @@
 		CF59C1A0247AD36600D0768C /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		CF643A5024766E84009C6B0A /* EPGDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPGDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF643A5324766E84009C6B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF643A5524766E84009C6B0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF643A5824766E84009C6B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF643A5524766E84009C6B0A /* EPGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGViewController.swift; sourceTree = "<group>"; };
 		CF643A5B24766E84009C6B0A /* EPGDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EPGDemo.xcdatamodel; sourceTree = "<group>"; };
 		CF643A5D24766E88009C6B0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF643A6024766E88009C6B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,6 +88,18 @@
 		CF643A7224766E88009C6B0A /* EPGDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPGDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF643A7624766E88009C6B0A /* EPGDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGDemoUITests.swift; sourceTree = "<group>"; };
 		CF643A7824766E88009C6B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6CA0E1249A0E6E00A70D59 /* ReusableIdentifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifierTests.swift; sourceTree = "<group>"; };
+		CFABC7C92498BA4500F1C54D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CFABC7CC2498C24000F1C54D /* LoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerTests.swift; sourceTree = "<group>"; };
+		CFDCE3A924A255930024B1B3 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		CFDCE3AB24A255DB0024B1B3 /* CollectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTest.swift; sourceTree = "<group>"; };
+		CFDD9609247BD063008CC476 /* EPGViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGViewModel.swift; sourceTree = "<group>"; };
+		CFDD960B247BD509008CC476 /* EPGCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGCoordinator.swift; sourceTree = "<group>"; };
+		CFDD960D247BD5C1008CC476 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		CFDD960F247BD6A8008CC476 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		CFDD9614247BDD0F008CC476 /* EPGFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGFlowLayout.swift; sourceTree = "<group>"; };
+		CFDD9616247BDD77008CC476 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		CFDD961A247BDEE6008CC476 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFDD9613247BDBEF008CC476 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF036B06247BE2FE00850F56 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF036B07247BE35B00850F56 /* EPGCollectionViewCell.swift */,
+				CF036B09247BE38900850F56 /* EPGCollectionViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		CF59C189247AADFB00D0768C /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +160,8 @@
 		CF59C197247AC16300D0768C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CFDCE3A924A255930024B1B3 /* Collection.swift */,
+				CFDD960D247BD5C1008CC476 /* Date.swift */,
 				CF59C198247AC17800D0768C /* URL.swift */,
 				CF59C19F247AD32300D0768C /* Tests */,
 			);
@@ -134,7 +173,6 @@
 			children = (
 				CF643A5324766E84009C6B0A /* AppDelegate.swift */,
 				CF643A5F24766E88009C6B0A /* LaunchScreen.storyboard */,
-				CF643A5724766E84009C6B0A /* Main.storyboard */,
 			);
 			path = Structure;
 			sourceTree = "<group>";
@@ -142,6 +180,9 @@
 		CF59C19E247AD20200D0768C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CF6E5F7D247BCEA500DF25F9 /* EPG */,
+				CF6E5F7B247BCB8600DF25F9 /* TabBar */,
+				CF6E5F7C247BCE7700DF25F9 /* Walkthrough */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -149,7 +190,9 @@
 		CF59C19F247AD32300D0768C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				CFDD960F247BD6A8008CC476 /* DateTests.swift */,
 				CF59C1A0247AD36600D0768C /* URLTests.swift */,
+				CFDCE3AB24A255DB0024B1B3 /* CollectionTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -179,6 +222,7 @@
 			children = (
 				CF643A85247670C0009C6B0A /* Core */,
 				CF643A86247670CD009C6B0A /* Data */,
+				CF95E8A5249BB37800CD5874 /* Coordinators */,
 				CF643A87247670DA009C6B0A /* Presentation */,
 				CF643A8824767137009C6B0A /* UI */,
 				CF643A8B247671AC009C6B0A /* App */,
@@ -219,6 +263,9 @@
 			isa = PBXGroup;
 			children = (
 				CF59C197247AC16300D0768C /* Extensions */,
+				CFABC7C92498BA4500F1C54D /* Logger.swift */,
+				CFDD961A247BDEE6008CC476 /* ReusableIdentifier.swift */,
+				CFABC7CB2498C12600F1C54D /* Tests */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -243,7 +290,7 @@
 		CF643A8824767137009C6B0A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CF643A5524766E84009C6B0A /* ViewController.swift */,
+				CFDD9618247BDD86008CC476 /* Extensions */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -284,6 +331,64 @@
 			path = Interactors;
 			sourceTree = "<group>";
 		};
+		CF6E5F7B247BCB8600DF25F9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CF6E5F7C247BCE7700DF25F9 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		CF6E5F7D247BCEA500DF25F9 /* EPG */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD960B247BD509008CC476 /* EPGCoordinator.swift */,
+				CF643A5524766E84009C6B0A /* EPGViewController.swift */,
+				CFDD9609247BD063008CC476 /* EPGViewModel.swift */,
+				CFDD9614247BDD0F008CC476 /* EPGFlowLayout.swift */,
+				CF036B06247BE2FE00850F56 /* Cell */,
+			);
+			path = EPG;
+			sourceTree = "<group>";
+		};
+		CF95E8A5249BB37800CD5874 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CFABC7CB2498C12600F1C54D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CFABC7CC2498C24000F1C54D /* LoggerTests.swift */,
+				CF6CA0E1249A0E6E00A70D59 /* ReusableIdentifierTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CFDD9618247BDD86008CC476 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD9616247BDD77008CC476 /* UICollectionViewCell.swift */,
+				CFDD9619247BDD96008CC476 /* Tests */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFDD9619247BDD96008CC476 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,6 +405,9 @@
 			dependencies = (
 			);
 			name = EPGDemo;
+			packageProductDependencies = (
+				CFDD9612247BDBEF008CC476 /* SnapKit */,
+			);
 			productName = EPGDemo;
 			productReference = CF643A5024766E84009C6B0A /* EPGDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -372,6 +480,9 @@
 				Base,
 			);
 			mainGroup = CF643A4724766E84009C6B0A;
+			packageReferences = (
+				CFDD9611247BDBEF008CC476 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CF643A5124766E84009C6B0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -391,7 +502,6 @@
 				CF643A6124766E88009C6B0A /* LaunchScreen.storyboard in Resources */,
 				CF643A5E24766E88009C6B0A /* Assets.xcassets in Resources */,
 				CF023AA924769123000FA45D /* EPGTVPlayerResponse.json in Resources */,
-				CF643A5924766E84009C6B0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,16 +526,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFDD9615247BDD0F008CC476 /* EPGFlowLayout.swift in Sources */,
+				CFDD961B247BDEE6008CC476 /* ReusableIdentifier.swift in Sources */,
 				CF59C192247AAEF800D0768C /* EPGProgram.swift in Sources */,
+				CFDD960E247BD5C1008CC476 /* Date.swift in Sources */,
+				CFABC7CA2498BA4500F1C54D /* Logger.swift in Sources */,
+				CFDD9617247BDD77008CC476 /* UICollectionViewCell.swift in Sources */,
 				CF59C18E247AAEC800D0768C /* EPGServerResponse.swift in Sources */,
+				CFDCE3AA24A255930024B1B3 /* Collection.swift in Sources */,
 				CF59C190247AAEDE00D0768C /* EPGChannel.swift in Sources */,
-				CF643A5624766E84009C6B0A /* ViewController.swift in Sources */,
+				CF643A5624766E84009C6B0A /* EPGViewController.swift in Sources */,
 				CF643A5424766E84009C6B0A /* AppDelegate.swift in Sources */,
+				CF036B08247BE35B00850F56 /* EPGCollectionViewCell.swift in Sources */,
 				CF59C187247AAD9900D0768C /* Network.swift in Sources */,
 				CF59C186247AAD9900D0768C /* NetworkManager.swift in Sources */,
 				CF59C18B247AAE3C00D0768C /* EPGFetcher.swift in Sources */,
 				CF59C194247AAF4E00D0768C /* ServerInfo.swift in Sources */,
+				CFDD960A247BD063008CC476 /* EPGViewModel.swift in Sources */,
+				CF036B0A247BE38900850F56 /* EPGCollectionViewModel.swift in Sources */,
 				CF59C196247AB55E00D0768C /* EPGResponse.swift in Sources */,
+				CFDD960C247BD509008CC476 /* EPGCoordinator.swift in Sources */,
 				CF643A5C24766E84009C6B0A /* EPGDemo.xcdatamodeld in Sources */,
 				CF59C199247AC17800D0768C /* URL.swift in Sources */,
 			);
@@ -435,9 +555,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFABC7CD2498C24000F1C54D /* LoggerTests.swift in Sources */,
 				CF59C188247AADC000D0768C /* MockNetworkManager.swift in Sources */,
 				CF59C1A1247AD36600D0768C /* URLTests.swift in Sources */,
 				CF643A6C24766E88009C6B0A /* EPGDemoTests.swift in Sources */,
+				CFDD9610247BD6A8008CC476 /* DateTests.swift in Sources */,
+				CFDCE3AC24A255DB0024B1B3 /* CollectionTest.swift in Sources */,
+				CF6CA0E2249A0E6E00A70D59 /* ReusableIdentifierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,14 +589,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CF643A5724766E84009C6B0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF643A5824766E84009C6B0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF643A5F24766E88009C6B0A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -613,6 +729,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
@@ -631,6 +748,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};
@@ -758,6 +876,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CFDD9611247BDBEF008CC476 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CFDD9612247BDBEF008CC476 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFDD9611247BDBEF008CC476 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CF643A5A24766E84009C6B0A /* EPGDemo.xcdatamodeld */ = {
