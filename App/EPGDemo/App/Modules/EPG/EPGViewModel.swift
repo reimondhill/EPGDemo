@@ -151,7 +151,7 @@ extension EPGViewModel: EPGViewModelInterface {
     func minutesDuration(at indexPath: IndexPath) -> Float {
         guard let program = channels[safe: indexPath.section]?.programs[safe: indexPath.row],
             let startDate = program.startDate(),
-            let endDate = program.enDate()
+            let endDate = program.endDate()
             else { return 0 }
         
         return startDate.seconds(from: endDate)/60

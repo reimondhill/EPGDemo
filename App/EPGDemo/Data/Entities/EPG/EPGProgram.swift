@@ -30,7 +30,7 @@ extension EPGProgram {
         return Date(string: startDateString, using: format)
     }
     
-    func enDate(format: Date.Format = .locale) -> Date? {
+    func endDate(format: Date.Format = .locale) -> Date? {
         guard let endDateString = endDateString else { return nil }
         
         return Date(string: endDateString, using: format)

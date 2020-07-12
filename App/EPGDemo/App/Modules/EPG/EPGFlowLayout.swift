@@ -22,7 +22,7 @@ class EPGFlowLayout: UICollectionViewFlowLayout {
         var widthMinute: CGFloat
         var height: CGFloat
         
-        static var defaultStyle: Style = Style(widthMinute: 50, height: 82)
+        static var defaultStyle: Style = Style(widthMinute: 12, height: 82)
     }
     
     
@@ -72,9 +72,9 @@ extension EPGFlowLayout {
                     
                 let layoutAttributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
                 
-                layoutAttributes.frame = .init(x: delegate.epgFlowLayout(self, originFromStartReferenceAt: indexPath),
+                layoutAttributes.frame = .init(x: style.widthMinute * (delegate.epgFlowLayout(self, originFromStartReferenceAt: indexPath)),
                                                y: CGFloat(indexPath.section) * style.height,
-                                               width: delegate.epgFlowLayout(self, minutesDurationAt: indexPath),
+                                               width: style.widthMinute * (delegate.epgFlowLayout(self, minutesDurationAt: indexPath)),
                                                height: style.height)
                 
                 if layoutAttributes.frame.maxX >= maxX {

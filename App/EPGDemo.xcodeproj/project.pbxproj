@@ -29,6 +29,7 @@
 		CF643A6C24766E88009C6B0A /* EPGDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A6B24766E88009C6B0A /* EPGDemoTests.swift */; };
 		CF643A7724766E88009C6B0A /* EPGDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643A7624766E88009C6B0A /* EPGDemoUITests.swift */; };
 		CF6CA0E2249A0E6E00A70D59 /* ReusableIdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CA0E1249A0E6E00A70D59 /* ReusableIdentifierTests.swift */; };
+		CF72F77524BB3C2400C07911 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72F77424BB3C2400C07911 /* StackView.swift */; };
 		CFABC7CA2498BA4500F1C54D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABC7C92498BA4500F1C54D /* Logger.swift */; };
 		CFABC7CD2498C24000F1C54D /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABC7CC2498C24000F1C54D /* LoggerTests.swift */; };
 		CFDCE3AA24A255930024B1B3 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDCE3A924A255930024B1B3 /* Collection.swift */; };
@@ -89,6 +90,7 @@
 		CF643A7624766E88009C6B0A /* EPGDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGDemoUITests.swift; sourceTree = "<group>"; };
 		CF643A7824766E88009C6B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6CA0E1249A0E6E00A70D59 /* ReusableIdentifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifierTests.swift; sourceTree = "<group>"; };
+		CF72F77424BB3C2400C07911 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		CFABC7C92498BA4500F1C54D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		CFABC7CC2498C24000F1C54D /* LoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerTests.swift; sourceTree = "<group>"; };
 		CFDCE3A924A255930024B1B3 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
@@ -190,9 +192,9 @@
 		CF59C19F247AD32300D0768C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				CFDCE3AB24A255DB0024B1B3 /* CollectionTest.swift */,
 				CFDD960F247BD6A8008CC476 /* DateTests.swift */,
 				CF59C1A0247AD36600D0768C /* URLTests.swift */,
-				CFDCE3AB24A255DB0024B1B3 /* CollectionTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -291,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				CFDD9618247BDD86008CC476 /* Extensions */,
+				CF72F77424BB3C2400C07911 /* StackView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				CF59C192247AAEF800D0768C /* EPGProgram.swift in Sources */,
 				CFDD960E247BD5C1008CC476 /* Date.swift in Sources */,
 				CFABC7CA2498BA4500F1C54D /* Logger.swift in Sources */,
+				CF72F77524BB3C2400C07911 /* StackView.swift in Sources */,
 				CFDD9617247BDD77008CC476 /* UICollectionViewCell.swift in Sources */,
 				CF59C18E247AAEC800D0768C /* EPGServerResponse.swift in Sources */,
 				CFDCE3AA24A255930024B1B3 /* Collection.swift in Sources */,

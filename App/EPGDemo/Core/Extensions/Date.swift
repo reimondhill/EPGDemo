@@ -77,13 +77,32 @@ extension Date {
         return Float(endDate.timeIntervalSince1970 - self.timeIntervalSince1970)
     }
     
+    /// Gets the time component from a date
+    /// - Parameters:
+    ///   - shouldShowSeconds: Whether or not it should display the seconds component
+    ///   - twentyFourHourFormat: Chose between 0-23 if enabled and 1-12 if disabled
+    ///   - shouldShowSymbol: Whether or not it should display 'AM' or 'PM'. If 'twentyFourHourFormat' is true then it's ignored
+    func timeString(shouldShowSeconds: Bool = false, twentyFourHourFormat: Bool = true, shouldShowSymbol: Bool = true) -> String {
+        let dateFormatter = DateFormatter()
+        
+        if twentyFourHourFormat {
+            dateFormatter.dateFormat = "HH:mm\(shouldShowSeconds ? ":ss":"")"
+        }
+        else {
+            dateFormatter.dateFormat = "hh:mm\(shouldShowSeconds ? ":ss":"")\(shouldShowSymbol ? " a":"")"
+        }
+    
+        return dateFormatter.string(from: self)
+    }
+    
     
     /// From the current value of the date, returns a new date with a certain number of days offset
-    /// - Parameter offsetDays: Number of days.
+    /// - Parameters:
+    ///   - offsetDays: Number of days.
     /// - Remark:
-    ///    - **Negative** values return past days
-    ///    - **Positive** values return future days
-    ///    - **0** returns the current value of the date
+    ///    - **Negative** values of 'offsetDays' return past days
+    ///    - **Positive** values of 'offsetDays' return future days
+    ///    - **0** value of 'offsetDays' returns the current value of the date
     func with(offsetDays: TimeInterval) -> Date{
         return Date(timeInterval: (offsetDays * 24 * 60 * 60), since: self)
     }

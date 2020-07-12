@@ -25,9 +25,34 @@ class EPGCollectionViewCell: UICollectionViewCell {
     
     
     //MARK: UI
+    override var clipsToBounds: Bool {
+        get { return true }
+        set {}
+    }
+    
+    private lazy var titlePeriodStackView: VStackView = {
+        let view = VStackView(spacing: 0,
+                              alignment: .leading,
+                              distribution: .fillEqually)
+        
+        view.addSubview(titleLabel)
+        view.addSubview(periodLabel)
+        
+        return view
+    }()
     private lazy var titleLabel: UILabel = {
         let view = UILabel()
         
+        view.textColor = .black
+        view.numberOfLines = 1
+        
+        return view
+    }()
+    private lazy var periodLabel: UILabel = {
+        let view = UILabel()
+        
+        view.textColor = .black
+        view.numberOfLines = 1
         return view
     }()
     
@@ -53,6 +78,7 @@ extension EPGCollectionViewCell {
         super.prepareForReuse()
         
         titleLabel.text = nil
+        periodLabel.text = nil
     }
     
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
@@ -80,17 +106,22 @@ extension EPGCollectionViewCell: EPGCollectionViewCellInterface {
 private extension EPGCollectionViewCell {
     
     func setupUI() {
-        clipsToBounds = true
         
-        addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { (maker) in
+        addSubview(titlePeriodStackView)
+        titlePeriodStackView.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
+        }
+        
+        titleLabel.snp.makeConstraints { (maker) in
+            maker.left.right.equalToSuperview()
+            maker.height.equalTo(21)
         }
     }
     
     func updateUI() {
         
         titleLabel.text = viewModel?.title
+        periodLabel.text = viewModel?.periodString
         
     }
     

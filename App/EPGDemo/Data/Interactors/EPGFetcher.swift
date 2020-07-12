@@ -26,7 +26,7 @@ struct EPGFetcher: EPGFetcherInterface {
     }
     
     func getEPG(daysOffset: Int, completion: @escaping (Result<EPGServerResponse, Error>) -> Void) {
-        guard let url = URL(string: "https://v1-metadata.tvplayer-cdn.com/api/epg-nocache/2020-07-08T00:00:00%2B01:00") else { return }
+        guard let url = URL(string: "https://v1-metadata.tvplayer-cdn.com/api/epg-nocache/2020-07-12T00:00:00%2B01:00") else { return }
         
         let params = ["cc":"gb",
                       "key":"2Pw1Eg0Px7Ey9Jm3Ly8Dr5Ci5Vc5Mk"]
