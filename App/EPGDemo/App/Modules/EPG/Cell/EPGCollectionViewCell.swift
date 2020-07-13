@@ -33,26 +33,21 @@ class EPGCollectionViewCell: UICollectionViewCell {
     private lazy var titlePeriodStackView: VStackView = {
         let view = VStackView(spacing: 0,
                               alignment: .leading,
-                              distribution: .fillEqually)
+                              distribution: .fillProportionally)
         
-        view.addSubview(titleLabel)
-        view.addSubview(periodLabel)
+        view.addArrangedSubview(titleLabel)
+        view.addArrangedSubview(periodLabel)
         
         return view
     }()
     private lazy var titleLabel: UILabel = {
         let view = UILabel()
         
-        view.textColor = .black
-        view.numberOfLines = 1
-        
         return view
     }()
     private lazy var periodLabel: UILabel = {
         let view = UILabel()
         
-        view.textColor = .black
-        view.numberOfLines = 1
         return view
     }()
     
@@ -110,11 +105,6 @@ private extension EPGCollectionViewCell {
         addSubview(titlePeriodStackView)
         titlePeriodStackView.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
-        }
-        
-        titleLabel.snp.makeConstraints { (maker) in
-            maker.left.right.equalToSuperview()
-            maker.height.equalTo(21)
         }
     }
     
