@@ -47,7 +47,7 @@ class EPGCollectionViewCell: UICollectionViewCell {
     }()
     private lazy var periodLabel: UILabel = {
         let view = UILabel()
-        
+
         return view
     }()
     
